@@ -1,10 +1,8 @@
-#README
+# See No Evil
 
-## See No Evil
+## Basic project workflow:
 
-### Basic project workflow:
-
-Any time changes are made to the source code, make sure to Build -> Rebuild in MSVC, which should create a new SeeNoEvil.uproject file.
+Any time changes are made to the source code, make sure to Build -> Rebuild in MSVS, which should create a new SeeNoEvil.uproject file.
 Edits to the blueprint or other project settings shouldn't require rebuilding as far as I know, but I'm not certain.
 
 As soon as possible, please start merging changes to this working copy from any existing temporary projects.
