@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeeNoEvil", "Intermediate\ProjectFiles\SeeNoEvil.vcxproj", "{B8A8EF41-2ED5-47A7-B639-E04B37954111}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeeNoEvil", "Intermediate\ProjectFiles\SeeNoEvil.vcxproj", "{58865A5A-61EC-46F6-AE42-376CBBB926CC}"
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
@@ -14,16 +14,16 @@ Global
 		Shipping|Windows = Shipping|Windows
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.DebugGame Editor|Windows.ActiveCfg = DebugGame_Editor|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.DebugGame Editor|Windows.Build.0 = DebugGame_Editor|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.DebugGame|Windows.ActiveCfg = DebugGame_Game|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.DebugGame|Windows.Build.0 = DebugGame_Game|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Development Editor|Windows.ActiveCfg = Development_Editor|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Development Editor|Windows.Build.0 = Development_Editor|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Development|Windows.ActiveCfg = Development_Game|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Development|Windows.Build.0 = Development_Game|x64
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Shipping|Windows.ActiveCfg = Shipping_Game|Win32
-		{B8A8EF41-2ED5-47A7-B639-E04B37954111}.Shipping|Windows.Build.0 = Shipping_Game|Win32
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.DebugGame Editor|Windows.ActiveCfg = DebugGame_Editor|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.DebugGame Editor|Windows.Build.0 = DebugGame_Editor|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.DebugGame|Windows.ActiveCfg = DebugGame_Game|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.DebugGame|Windows.Build.0 = DebugGame_Game|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Development Editor|Windows.ActiveCfg = Development_Editor|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Development Editor|Windows.Build.0 = Development_Editor|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Development|Windows.ActiveCfg = Development_Game|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Development|Windows.Build.0 = Development_Game|x64
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Shipping|Windows.ActiveCfg = Shipping_Game|Win32
+		{58865A5A-61EC-46F6-AE42-376CBBB926CC}.Shipping|Windows.Build.0 = Shipping_Game|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
