@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SeeNoEvil.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{1F8B56BB-F0BB-4F58-9B0D-533116D47B1B}</UniqueIdentifier>
+			<UniqueIdentifier>{8236914E-84C1-407B-8645-C12B933D982D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SeeNoEvil.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{2519DBEF-0779-4011-98EC-0648F8C25860}</UniqueIdentifier>
+			<UniqueIdentifier>{66169CAF-BC93-4463-BCF1-5727B53D1A2D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,13 +28,13 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SeeNoEvil">
-			<UniqueIdentifier>{FADCE4CA-3B2D-4F4D-A675-B13F1320656A}</UniqueIdentifier>
+			<UniqueIdentifier>{C7447DA0-6F33-430B-9F3F-9E17B2077607}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SeeNoEvil\SeeNoEvil.Build.cs">
 			<Filter>Source\SeeNoEvil</Filter>
 		</None >
 		<Filter Include="Source\SeeNoEvil\Private">
-			<UniqueIdentifier>{F9661071-5325-4CD3-A594-595165558434}</UniqueIdentifier>
+			<UniqueIdentifier>{D1F8D759-DBA4-46AE-B0D8-050050180F5A}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvil.cpp">
 			<Filter>Source\SeeNoEvil\Private</Filter>
@@ -52,7 +52,7 @@
 			<Filter>Source\SeeNoEvil\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\SeeNoEvil\Public">
-			<UniqueIdentifier>{DB0D519A-64A2-4E05-8AB4-CD057F4223D2}</UniqueIdentifier>
+			<UniqueIdentifier>{727CC837-807D-43FD-AE73-B66E8901511D}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvil.h">
 			<Filter>Source\SeeNoEvil\Public</Filter>
@@ -70,10 +70,10 @@
 			<Filter>Source\SeeNoEvil\Public</Filter>
 		</ClInclude >
 		<Filter Include="Source\SeeNoEvil\Resources">
-			<UniqueIdentifier>{CB3DE65D-845E-434C-98DF-D9B55B0DB400}</UniqueIdentifier>
+			<UniqueIdentifier>{270CA846-9CC7-4784-84D6-08F67C1ED970}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SeeNoEvil\Resources\Windows">
-			<UniqueIdentifier>{91119DA4-4AC3-4A27-9B2F-986857663872}</UniqueIdentifier>
+			<UniqueIdentifier>{CB432505-F279-439F-9468-FD0BA2804B17}</UniqueIdentifier>
 		</Filter>
 		<ResourceCompile Include="..\..\Source\SeeNoEvil\Resources\Windows\SeeNoEvil.rc">
 			<Filter>Source\SeeNoEvil\Resources\Windows</Filter>

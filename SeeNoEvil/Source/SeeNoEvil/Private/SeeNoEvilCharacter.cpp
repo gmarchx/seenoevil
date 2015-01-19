@@ -63,8 +63,8 @@ void ASeeNoEvilCharacter::SetupPlayerInputComponent(class UInputComponent* Input
 	InputComponent->BindAxis("LookUpRate", this, &ASeeNoEvilCharacter::LookUpAtRate);
 
 	// set up gameplay key bindings
-	//InputComponent->BindAction("Crouch", IE_Pressed, this, &ASeeNoEvilCharacter::OnBeginCrouch);
-	//InputComponent->BindAction("Crouch", IE_Released, this, &ASeeNoEvilCharacter::OnStopCrouch);
+	InputComponent->BindAction("Crouch", IE_Pressed, this, &ASeeNoEvilCharacter::OnBeginCrouch);
+	InputComponent->BindAction("Crouch", IE_Released, this, &ASeeNoEvilCharacter::OnStopCrouch);
 }
 
 
@@ -96,4 +96,14 @@ void ASeeNoEvilCharacter::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+}
+
+void ASeeNoEvilCharacter::OnBeginCrouch()
+{
+	CharacterMovement->bWantsToCrouch = true;
+}
+
+void ASeeNoEvilCharacter::OnStopCrouch()
+{
+	CharacterMovement->bWantsToCrouch = false;
 }
