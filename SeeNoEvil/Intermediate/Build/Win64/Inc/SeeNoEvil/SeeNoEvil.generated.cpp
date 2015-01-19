@@ -10,8 +10,10 @@
 void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	void ASeeNoEvilCharacter::StaticRegisterNativesASeeNoEvilCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(ASeeNoEvilCharacter::StaticClass(),"OnBeginCrouch",(Native)&ASeeNoEvilCharacter::execOnBeginCrouch);
+		FNativeFunctionRegistrar::RegisterFunction(ASeeNoEvilCharacter::StaticClass(),"OnStopCrouch",(Native)&ASeeNoEvilCharacter::execOnStopCrouch);
 	}
-	IMPLEMENT_CLASS(ASeeNoEvilCharacter, 252540280);
+	IMPLEMENT_CLASS(ASeeNoEvilCharacter, 1068063125);
 	void ASeeNoEvilGameMode::StaticRegisterNativesASeeNoEvilGameMode()
 	{
 	}
@@ -42,6 +44,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
+	SEENOEVIL_API class UFunction* Z_Construct_UFunction_ASeeNoEvilCharacter_OnBeginCrouch();
+	SEENOEVIL_API class UFunction* Z_Construct_UFunction_ASeeNoEvilCharacter_OnStopCrouch();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilCharacter_NoRegister();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilCharacter();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilGameMode_NoRegister();
@@ -52,6 +56,38 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilProjectile_NoRegister();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilProjectile();
 	SEENOEVIL_API class UPackage* Z_Construct_UPackage_SeeNoEvil();
+	UFunction* Z_Construct_UFunction_ASeeNoEvilCharacter_OnBeginCrouch()
+	{
+		UClass* OuterClass=Z_Construct_UClass_ASeeNoEvilCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(OuterClass, TEXT("OnBeginCrouch"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x00080400, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SeeNoEvilCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ASeeNoEvilCharacter_OnStopCrouch()
+	{
+		UClass* OuterClass=Z_Construct_UClass_ASeeNoEvilCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(OuterClass, TEXT("OnStopCrouch"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x00080400, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SeeNoEvilCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ASeeNoEvilCharacter_NoRegister()
 	{
 		return ASeeNoEvilCharacter::StaticClass();
@@ -69,6 +105,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20800080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ASeeNoEvilCharacter_OnBeginCrouch());
+				OuterClass->LinkChild(Z_Construct_UFunction_ASeeNoEvilCharacter_OnStopCrouch());
 
 				UProperty* NewProp_FireAnimation = new(OuterClass, TEXT("FireAnimation"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FireAnimation, ASeeNoEvilCharacter), 0x0000000000000005, Z_Construct_UClass_UAnimMontage_NoRegister());
 				UProperty* NewProp_FireSound = new(OuterClass, TEXT("FireSound"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FireSound, ASeeNoEvilCharacter), 0x0000000000000005, Z_Construct_UClass_USoundBase_NoRegister());
@@ -78,6 +116,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 				UProperty* NewProp_BaseTurnRate = new(OuterClass, TEXT("BaseTurnRate"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(BaseTurnRate, ASeeNoEvilCharacter), 0x0000000000020015);
 				UProperty* NewProp_FirstPersonCameraComponent = new(OuterClass, TEXT("FirstPersonCameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(FirstPersonCameraComponent, ASeeNoEvilCharacter), 0x00000000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_Mesh1P = new(OuterClass, TEXT("Mesh1P"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(Mesh1P, ASeeNoEvilCharacter), 0x00000000000b0009, Z_Construct_UClass_USkeletalMeshComponent_NoRegister());
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ASeeNoEvilCharacter_OnBeginCrouch()); // 2154582505
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ASeeNoEvilCharacter_OnStopCrouch()); // 357688643
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -270,8 +310,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SeeNoEvil")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x3013321C;
-			Guid.B = 0xB0213CD1;
+			Guid.A = 0x71F4F195;
+			Guid.B = 0x72A49F45;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -13,7 +13,19 @@
 #define SEENOEVIL_SeeNoEvilCharacter_generated_h
 
 #define ASeeNoEvilCharacter_EVENTPARMS
-#define ASeeNoEvilCharacter_RPC_WRAPPERS
+#define ASeeNoEvilCharacter_RPC_WRAPPERS \
+	DECLARE_FUNCTION(execOnStopCrouch) \
+	{ \
+		P_FINISH; \
+		this->OnStopCrouch(); \
+	} \
+	DECLARE_FUNCTION(execOnBeginCrouch) \
+	{ \
+		P_FINISH; \
+		this->OnBeginCrouch(); \
+	}
+
+
 #define ASeeNoEvilCharacter_CALLBACK_WRAPPERS
 #define ASeeNoEvilCharacter_INCLASS \
 	private: \
