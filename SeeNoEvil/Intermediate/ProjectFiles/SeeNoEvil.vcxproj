@@ -1,193 +1,194 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup Label="ProjectConfigurations">
-		<ProjectConfiguration Include="DebugGame_Game|x64">
-			<Configuration>DebugGame_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="DebugGame_Game|Win32">
-			<Configuration>DebugGame_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="DebugGame_Editor|x64">
-			<Configuration>DebugGame_Editor</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="DebugGame_Editor|Win32">
-			<Configuration>DebugGame_Editor</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Development_Game|x64">
-			<Configuration>Development_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Development_Game|Win32">
-			<Configuration>Development_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Development_Editor|x64">
-			<Configuration>Development_Editor</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Development_Editor|Win32">
-			<Configuration>Development_Editor</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Shipping_Game|x64">
-			<Configuration>Shipping_Game</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-		<ProjectConfiguration Include="Shipping_Game|Win32">
-			<Configuration>Shipping_Game</Configuration>
-			<Platform>Win32</Platform>
-		</ProjectConfiguration>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\..\SeeNoEvil.uproject" />
-		<None Include="..\..\Source\SeeNoEvil.Target.cs" />
-		<None Include="..\..\Source\SeeNoEvilEditor.Target.cs" />
-		<None Include="..\..\Config\DefaultEditor.ini" />
-		<None Include="..\..\Config\DefaultEngine.ini" />
-		<None Include="..\..\Config\DefaultGame.ini" />
-		<None Include="..\..\Config\DefaultInput.ini" />
-		<None Include="..\..\Source\SeeNoEvil\SeeNoEvil.Build.cs" />
-		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvil.cpp" />
-		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilCharacter.cpp" />
-		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilGameMode.cpp" />
-		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilHUD.cpp" />
-		<ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilProjectile.cpp" />
-		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvil.h" />
-		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilCharacter.h" />
-		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilGameMode.h" />
-		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilHUD.h" />
-		<ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilProjectile.h" />
-		<ResourceCompile Include="..\..\Source\SeeNoEvil\Resources\Windows\SeeNoEvil.rc" />
-	</ItemGroup>
-	<PropertyGroup Label="Globals">
-		<ProjectGuid>{58865A5A-61EC-46F6-AE42-376CBBB926CC}</ProjectGuid>
-		<Keyword>MakeFileProj</Keyword>
-		<RootNamespace>SeeNoEvil</RootNamespace>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v120</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v120</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v120</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v120</PlatformToolset>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'" Label="Configuration">
-		<ConfigurationType>Makefile</ConfigurationType>
-		<PlatformToolset>v120</PlatformToolset>
-	</PropertyGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-	<ImportGroup Label="ExtensionSettings" />
-	<PropertyGroup Label="UserMacros" />
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Win64\SeeNoEvil-Win64-DebugGame.exe</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
-		<NMakeOutput>D:\Programs\Epic Games\4.6\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Win64\SeeNoEvil.exe</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
-		<NMakeOutput>D:\Programs\Epic Games\4.6\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
-	</PropertyGroup>
-	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'" Label="PropertySheets">
-		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-	</ImportGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'">
-		<IncludePath />
-		<ReferencePath />
-		<LibraryPath />
-		<LibraryWPath />
-		<SourcePath />
-		<ExcludePath />
-		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
-		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
-		<NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
-		<NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
-		<NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
-		<NMakeOutput>..\..\Binaries\Win32\SeeNoEvil-Win32-Shipping.exe</NMakeOutput>
-	</PropertyGroup>
-	<PropertyGroup>
-		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);UE_GAME=1;IS_PROGRAM=0;UE_ROCKET=1;UNICODE;_UNICODE;__UNREAL__;IS_MONOLITHIC=1;WITH_ENGINE=1;WITH_UNREAL_DEVELOPER_TOOLS=0;WITH_COREUOBJECT=1;USE_STATS_WITHOUT_ENGINE=0;WITH_PLUGIN_SUPPORT=0;USE_LOGGING_IN_SHIPPING=0;UE_BUILD_MINIMAL=1;WITH_EDITOR=1;WITH_EDITORONLY_DATA=0;WITH_SERVER_CODE=1;UBT_COMPILED_PLATFORM=Win64;WIN32=1;_WIN32_WINNT=0x0600;WINVER=0x0600;PLATFORM_WINDOWS=1;NDEBUG=1;UE_BUILD_DEVELOPMENT=1;UE_ENGINE_DIRECTORY=D:/Programs/Epic Games/4.6/Engine/;UE_PROJECT_NAME=SeeNoEvil;ORIGINAL_FILE_NAME="SeeNoEvil.exe";DEPRECATED_FORGAME=DEPRECATED;SEENOEVIL_API=;UE_ENABLE_ICU=1;WITH_STEAMWORKS=1;WITH_DIRECTXMATH=0;CORE_API=;COREUOBJECT_API=;WITH_PHYSX=1;WITH_APEX=1;WITH_RUNTIME_PHYSICS_COOKING;WITH_BOX2D=1;WITH_RECAST=1;ENGINE_API=;JSON_API=;WITH_FREETYPE=1;SLATE_API=;INPUTCORE_API=;SLATECORE_API=;MESSAGING_API=;RENDERCORE_API=;RHI_API=;SHADERCORE_API=;ASSETREGISTRY_API=;ENGINEMESSAGES_API=;ENGINESETTINGS_API=;SYNTHBENCHMARK_API=;RENDERER_API=;AIMODULE_API=;VECTORVM_API=;DATABASESUPPORT_API=;UE_EDITOR=1;UNREALED_API=;BSPMODE_API=;DOCUMENTATION_API=;PROJECTS_API=;SANDBOXFILE_API=;EDITORSTYLE_API=;SOURCECONTROL_API=;UNREALEDMESSAGES_API=;BLUEPRINTGRAPH_API=;XAUDIO2_API=;USERFEEDBACK_API=;COLLECTIONMANAGER_API=;NIAGARAEDITOR_API=;GRAPHEDITOR_API=;INTROTUTORIALS_API=;LEVELEDITOR_API=;SETTINGS_API=;KISMET_API=</NMakePreprocessorDefinitions>
-		<NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);D:\Programs\Epic Games\4.6\Engine\Source;..\..\Source;..\Build\Win64\SeeNoEvil\Inc\SeeNoEvil;..\..\Source\SeeNoEvil\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Internationalization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Async;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Concurrency;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Containers;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Delegates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\GenericPlatform;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\HAL;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Logging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Math;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Misc;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Modules;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Modules\Boilerplate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\ProfilingDebugging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization\Json;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization\Csv;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Stats;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Templates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\UObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Windows;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\CoreUObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Blueprint;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Misc;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Templates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\UObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Engine;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\AI;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\EdGraph;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Features;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Net;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Slate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\VisualLogger;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\AI\Navigation;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Json;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Dom;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Policies;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Slate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Application;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Commands;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Docking;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\MultiBox;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Notifications;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Styling;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Views;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text\Android;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text\IOS;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Colors;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Docking;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Images;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Input;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Navigation;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Notifications;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Text;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Views;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\InputCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SlateCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Animation;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Application;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Brushes;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Fonts;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Input;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Logging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Rendering;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Sound;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Styling;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Textures;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Types;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Widgets;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Messaging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public\Deprecated;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public\Helpers;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\RenderCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RenderCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RenderCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\RHI;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RHI\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RHI;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\ShaderCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\ShaderCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\ShaderCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\AssetRegistry;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AssetRegistry\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AssetRegistry;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EngineMessages;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EngineSettings;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SynthBenchmark;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SynthBenchmark\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Renderer;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Renderer\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Renderer;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SynthBenchmark;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\AIModule;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\VectorVM;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\VectorVM\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\VectorVM;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\DatabaseSupport;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\DatabaseSupport\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\DatabaseSupport;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine;..\..\Source\SeeNoEvil;..\Build\Win64\Inc\SeeNoEvil;D:\Programs\Epic Games\4.6\Engine\Source\Programs\UnrealLightmass\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UnrealEd;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Commandlets;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Dialogs;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\DragAndDrop;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Features;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Kismet2;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Layers;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Toolkits;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\BspMode;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BspMode\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BspMode;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Documentation;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Documentation\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Documentation;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Projects;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects\Public\Interfaces;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SandboxFile;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SandboxFile\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SandboxFile;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EditorStyle;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public\Classes;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public\Interfaces;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SourceControl;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UnrealEdMessages;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\BlueprintGraph;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\XAudio2;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Windows\XAudio2\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Windows\XAudio2;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UserFeedback;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UserFeedback\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UserFeedback;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\CollectionManager;D:\Programs\Epic Games\4.6\Engine\Source\Developer\CollectionManager\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\CollectionManager;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\NiagaraEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\NiagaraEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\GraphEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\GraphEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\IntroTutorials;D:\Programs\Epic Games\4.6\Engine\Source\Editor\IntroTutorials\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\IntroTutorials;D:\Programs\Epic Games\4.6\Engine\Source\Editor\GraphEditor;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\LevelEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\LevelEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Settings;D:\Programs\Epic Games\4.6\Engine\Source\Developer\Settings\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\Settings;D:\Programs\Epic Games\4.6\Engine\Source\Editor\LevelEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\NiagaraEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Kismet;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Public\WorkflowOrientedApp;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet;D:\Programs\VC\INCLUDE;D:\Programs\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
-		<NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
-		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
-		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
-	</PropertyGroup>
-	<ItemDefinitionGroup>
-	</ItemDefinitionGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-	<ImportGroup Label="ExtensionTargets">
-	</ImportGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugGame_Game|x64">
+      <Configuration>DebugGame_Game</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Game|Win32">
+      <Configuration>DebugGame_Game</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|x64">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|Win32">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Game|x64">
+      <Configuration>Development_Game</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Game|Win32">
+      <Configuration>Development_Game</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|x64">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|Win32">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Game|x64">
+      <Configuration>Shipping_Game</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Game|Win32">
+      <Configuration>Shipping_Game</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SeeNoEvil.uproject" />
+    <None Include="..\..\Source\SeeNoEvil.Target.cs" />
+    <None Include="..\..\Source\SeeNoEvilEditor.Target.cs" />
+    <None Include="..\..\Config\DefaultEditor.ini" />
+    <None Include="..\..\Config\DefaultEngine.ini" />
+    <None Include="..\..\Config\DefaultGame.ini" />
+    <None Include="..\..\Config\DefaultInput.ini" />
+    <None Include="..\..\Source\SeeNoEvil\SeeNoEvil.Build.cs" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvil.cpp" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilCharacter.cpp" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilGameMode.cpp" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilHUD.cpp" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilPlayerController.cpp" />
+    <ClCompile Include="..\..\Source\SeeNoEvil\Private\SeeNoEvilProjectile.cpp" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvil.h" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilCharacter.h" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilGameMode.h" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilHUD.h" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilPlayerController.h" />
+    <ClInclude Include="..\..\Source\SeeNoEvil\Public\SeeNoEvilProjectile.h" />
+    <ResourceCompile Include="..\..\Source\SeeNoEvil\Resources\Windows\SeeNoEvil.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58865A5A-61EC-46F6-AE42-376CBBB926CC}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>SeeNoEvil</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\SeeNoEvil-Win64-DebugGame.exe</NMakeOutput>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvilEditor Win64 DebugGame "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Programs\Epic Games\4.6\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\SeeNoEvil.exe</NMakeOutput>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvilEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Programs\Epic Games\4.6\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Build.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Rebuild.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Programs\Epic Games\4.6\Engine\Build\BatchFiles\Clean.bat" SeeNoEvil Win32 Shipping "$(SolutionDir)$(ProjectName).uproject" -rocket</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win32\SeeNoEvil-Win32-Shipping.exe</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);UE_GAME=1;IS_PROGRAM=0;UE_ROCKET=1;UNICODE;_UNICODE;__UNREAL__;IS_MONOLITHIC=1;WITH_ENGINE=1;WITH_UNREAL_DEVELOPER_TOOLS=0;WITH_COREUOBJECT=1;USE_STATS_WITHOUT_ENGINE=0;WITH_PLUGIN_SUPPORT=0;USE_LOGGING_IN_SHIPPING=0;UE_BUILD_MINIMAL=1;WITH_EDITOR=1;WITH_EDITORONLY_DATA=0;WITH_SERVER_CODE=1;UBT_COMPILED_PLATFORM=Win64;WIN32=1;_WIN32_WINNT=0x0600;WINVER=0x0600;PLATFORM_WINDOWS=1;NDEBUG=1;UE_BUILD_DEVELOPMENT=1;UE_ENGINE_DIRECTORY=D:/Programs/Epic Games/4.6/Engine/;UE_PROJECT_NAME=SeeNoEvil;ORIGINAL_FILE_NAME="SeeNoEvil.exe";DEPRECATED_FORGAME=DEPRECATED;SEENOEVIL_API=;UE_ENABLE_ICU=1;WITH_STEAMWORKS=1;WITH_DIRECTXMATH=0;CORE_API=;COREUOBJECT_API=;WITH_PHYSX=1;WITH_APEX=1;WITH_RUNTIME_PHYSICS_COOKING;WITH_BOX2D=1;WITH_RECAST=1;ENGINE_API=;JSON_API=;WITH_FREETYPE=1;SLATE_API=;INPUTCORE_API=;SLATECORE_API=;MESSAGING_API=;RENDERCORE_API=;RHI_API=;SHADERCORE_API=;ASSETREGISTRY_API=;ENGINEMESSAGES_API=;ENGINESETTINGS_API=;SYNTHBENCHMARK_API=;RENDERER_API=;AIMODULE_API=;VECTORVM_API=;DATABASESUPPORT_API=;UE_EDITOR=1;UNREALED_API=;BSPMODE_API=;DOCUMENTATION_API=;PROJECTS_API=;SANDBOXFILE_API=;EDITORSTYLE_API=;SOURCECONTROL_API=;UNREALEDMESSAGES_API=;BLUEPRINTGRAPH_API=;XAUDIO2_API=;USERFEEDBACK_API=;COLLECTIONMANAGER_API=;NIAGARAEDITOR_API=;GRAPHEDITOR_API=;INTROTUTORIALS_API=;LEVELEDITOR_API=;SETTINGS_API=;KISMET_API=</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);D:\Programs\Epic Games\4.6\Engine\Source;..\..\Source;..\Build\Win64\SeeNoEvil\Inc\SeeNoEvil;..\..\Source\SeeNoEvil\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Internationalization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Async;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Concurrency;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Containers;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Delegates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\GenericPlatform;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\HAL;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Logging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Math;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Misc;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Modules;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Modules\Boilerplate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\ProfilingDebugging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization\Json;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Serialization\Csv;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Stats;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Templates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\UObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core\Public\Windows;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Core;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\CoreUObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Blueprint;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Misc;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\Templates;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject\Public\UObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\CoreUObject;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Engine;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\AI;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\EdGraph;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Features;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Net;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Slate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\VisualLogger;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine\Public\AI\Navigation;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Json;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Dom;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Policies;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json\Public\Serialization;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Json;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Slate;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Application;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Commands;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Docking;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\MultiBox;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Notifications;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Styling;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Views;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text\Android;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Framework\Text\IOS;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Colors;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Docking;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Images;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Input;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Navigation;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Notifications;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Text;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate\Public\Widgets\Views;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\InputCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\InputCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SlateCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Animation;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Application;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Brushes;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Fonts;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Input;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Layout;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Logging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Rendering;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Sound;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Styling;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Textures;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Types;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore\Public\Widgets;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SlateCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Slate;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Messaging;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public\Deprecated;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging\Public\Helpers;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Messaging;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\RenderCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RenderCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RenderCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\RHI;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RHI\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\RHI;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\ShaderCore;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\ShaderCore\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\ShaderCore;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\AssetRegistry;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AssetRegistry\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AssetRegistry;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EngineMessages;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineMessages;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EngineSettings;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\EngineSettings;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SynthBenchmark;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SynthBenchmark\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Renderer;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Renderer\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Renderer;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SynthBenchmark;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\AIModule;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\AIModule;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\VectorVM;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\VectorVM\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\VectorVM;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\DatabaseSupport;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\DatabaseSupport\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\DatabaseSupport;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Engine;..\..\Source\SeeNoEvil;..\Build\Win64\Inc\SeeNoEvil;D:\Programs\Epic Games\4.6\Engine\Source\Programs\UnrealLightmass\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UnrealEd;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Commandlets;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Dialogs;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\DragAndDrop;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Features;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Kismet2;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Layers;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd\Public\Toolkits;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\BspMode;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BspMode\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BspMode;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Documentation;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Documentation\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Documentation;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Projects;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects\Public\Interfaces;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Projects;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SandboxFile;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SandboxFile\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\SandboxFile;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\EditorStyle;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public\Classes;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle\Public\Interfaces;D:\Programs\Epic Games\4.6\Engine\Source\Editor\EditorStyle;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\SourceControl;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl\Public\Tests;D:\Programs\Epic Games\4.6\Engine\Source\Developer\SourceControl;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UnrealEdMessages;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEdMessages;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\BlueprintGraph;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\BlueprintGraph;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\XAudio2;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Windows\XAudio2\Public;D:\Programs\Epic Games\4.6\Engine\Source\Runtime\Windows\XAudio2;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\UserFeedback;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UserFeedback\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UserFeedback;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\CollectionManager;D:\Programs\Epic Games\4.6\Engine\Source\Developer\CollectionManager\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\CollectionManager;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\NiagaraEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\NiagaraEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\GraphEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\GraphEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\IntroTutorials;D:\Programs\Epic Games\4.6\Engine\Source\Editor\IntroTutorials\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\IntroTutorials;D:\Programs\Epic Games\4.6\Engine\Source\Editor\GraphEditor;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\LevelEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\LevelEditor\Public;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Settings;D:\Programs\Epic Games\4.6\Engine\Source\Developer\Settings\Public;D:\Programs\Epic Games\4.6\Engine\Source\Developer\Settings;D:\Programs\Epic Games\4.6\Engine\Source\Editor\LevelEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\NiagaraEditor;D:\Programs\Epic Games\4.6\Engine\Source\Editor\UnrealEd;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Classes;D:\Programs\Epic Games\4.6\Engine\Intermediate\Build\Win64\Inc\Kismet;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Public;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet\Public\WorkflowOrientedApp;D:\Programs\Epic Games\4.6\Engine\Source\Editor\Kismet;D:\Programs\VC\INCLUDE;D:\Programs\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>

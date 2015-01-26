@@ -14,6 +14,9 @@
 #ifndef SEENOEVIL_SeeNoEvilHUD_generated_h
 	#include "Public/SeeNoEvilHUD.h"
 #endif
+#ifndef SEENOEVIL_SeeNoEvilPlayerController_generated_h
+	#include "Public/SeeNoEvilPlayerController.h"
+#endif
 #ifndef SEENOEVIL_SeeNoEvilProjectile_generated_h
 	#include "Public/SeeNoEvilProjectile.h"
 #endif

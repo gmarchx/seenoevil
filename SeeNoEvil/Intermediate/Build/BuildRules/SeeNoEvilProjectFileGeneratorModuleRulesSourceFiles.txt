@@ -334,7 +334,8 @@ C:\Program Files\Epic Games\4.6\Engine\Plugins\ScriptGeneratorPlugin\Source\Scri
 C:\Program Files\Epic Games\4.6\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files\Epic Games\4.6\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Epic Games\4.6\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-C:\Users\Matthew\Documents\Unreal Projects\SeeNoEvil\Source\SeeNoEvil\SeeNoEvil.Build.cs
+C:\Users\Brian\Desktop\CMPS 171\seenoevil\SeeNoEvil\Source\SeeNoEvil\SeeNoEvil.Build.cs
 C:\Program Files\Epic Games\4.6\Engine\Source\UE4Game.Target.cs
-C:\Users\Matthew\Documents\Unreal Projects\SeeNoEvil\Source\SeeNoEvil.Target.cs
-C:\Users\Matthew\Documents\Unreal Projects\SeeNoEvil\Source\SeeNoEvilEditor.Target.cs
+C:\Users\Brian\Desktop\CMPS 171\seenoevil\SeeNoEvil\Source\SeeNoEvil.Target.cs
+C:\Users\Brian\Desktop\CMPS 171\seenoevil\SeeNoEvil\Source\SeeNoEvilEditor.Target.cs
+s

@@ -22,6 +22,10 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	{
 	}
 	IMPLEMENT_CLASS(ASeeNoEvilHUD, 3725807168);
+	void ASeeNoEvilPlayerController::StaticRegisterNativesASeeNoEvilPlayerController()
+	{
+	}
+	IMPLEMENT_CLASS(ASeeNoEvilPlayerController, 2540830597);
 	void ASeeNoEvilProjectile::StaticRegisterNativesASeeNoEvilProjectile()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ASeeNoEvilProjectile::StaticClass(),"OnHit",(Native)&ASeeNoEvilProjectile::execOnHit);
@@ -37,6 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
+	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_UEngineTypes_FHitResult();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -52,6 +57,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilGameMode();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilHUD_NoRegister();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilHUD();
+	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilPlayerController_NoRegister();
+	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilPlayerController();
 	SEENOEVIL_API class UFunction* Z_Construct_UFunction_ASeeNoEvilProjectile_OnHit();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilProjectile_NoRegister();
 	SEENOEVIL_API class UClass* Z_Construct_UClass_ASeeNoEvilProjectile();
@@ -225,6 +232,38 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASeeNoEvilHUD(Z_Construct_UClass_ASeeNoEvilHUD, TEXT("ASeeNoEvilHUD"));
+	UClass* Z_Construct_UClass_ASeeNoEvilPlayerController_NoRegister()
+	{
+		return ASeeNoEvilPlayerController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ASeeNoEvilPlayerController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APlayerController();
+			Z_Construct_UPackage_SeeNoEvil();
+			OuterClass = ASeeNoEvilPlayerController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900284;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SeeNoEvilPlayerController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/SeeNoEvilPlayerController.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ASeeNoEvilPlayerController(Z_Construct_UClass_ASeeNoEvilPlayerController, TEXT("ASeeNoEvilPlayerController"));
 	UFunction* Z_Construct_UFunction_ASeeNoEvilProjectile_OnHit()
 	{
 		struct SeeNoEvilProjectile_eventOnHit_Parms
@@ -310,8 +349,8 @@ void EmptyLinkFunctionForGeneratedCodeSeeNoEvil() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SeeNoEvil")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x71F4F195;
-			Guid.B = 0x72A49F45;
+			Guid.A = 0x00A6A3B2;
+			Guid.B = 0xC58F4DEA;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
